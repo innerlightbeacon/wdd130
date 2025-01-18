@@ -1,3 +1,4 @@
+/* Navigation styles */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -9,11 +10,13 @@ nav {
     padding: 20px;
   }
   
+  /* Header styles */
   h1 {
     color: darkblue;
   }
   
-  img {
+  /* More specific image styling for main content */
+  main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -21,7 +24,31 @@ nav {
     box-shadow: 0 0 30px gray;
   }
   
+  /* Corrected padding for paragraphs */
   p {
+    padding: 0;
+  }
+  
+  /* Aside section styling */
+  aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
     padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Specific image styling for the aside */
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
   }
   
