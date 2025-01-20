@@ -1,54 +1,75 @@
+/* Define global variables using :root */
+:root {
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --background-color: #f9f9f9;
+    --border-color: #ccc;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+    --font-size-large: 20px; /* Added for consistent font sizing */
+    --font-size-medium: 16px; /* Added for consistent font sizing */
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --box-shadow: 0 0 30px gray;
+}
+
 /* Navigation styles */
 nav {
-    background-color: darkblue;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: white;
+    background-color: var(--primary-color);
+    padding: var(--padding-small);
+}
+
+nav a {
+    color: var(--secondary-color);
     display: block;
-    padding: 20px;
-  }
-  
-  /* Header styles */
-  h1 {
-    color: darkblue;
-  }
-  
-  /* More specific image styling for main content */
-  main img {
+    padding: var(--padding-medium);
+    font-size: var(--font-size-medium); /* Added consistent font size */
+}
+
+/* Header styles */
+h1 {
+    color: var(--primary-color);
+    font-size: var(--font-size-large); /* Added consistent font size */
+}
+
+/* More specific image styling for main content */
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color); /* Replaced border color with variable */
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-  }
-  
-  /* Corrected padding for paragraphs */
-  p {
+    box-shadow: var(--box-shadow);
+    display: inline-block;  /* Aligns image to the left */
+    margin: 0;  /* Removes any auto margin */
+}
+
+/* Corrected padding for paragraphs */
+p {
     padding: 0;
-  }
-  
-  /* Aside section styling */
-  aside {
+    font-size: var(--font-size-medium); /* Added consistent font size */
+}
+
+/* Aside section styling */
+aside {
     width: 300px;
     margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Specific image styling for the aside */
-  aside img {
+    border: 1px solid var(--border-color);
+    padding: var(--padding-small);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--font-size-medium); /* Added consistent font size */
+}
+
+/* Specific image styling for the aside */
+aside img {
     width: 200px;
     height: auto;
-  }
-  
-  /* Footer styling */
-  footer {
+}
+
+/* Footer styling */
+footer {
     margin-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border-color);
     text-align: center;
-  }
-  
+    font-size: var(--font-size-medium); /* Added consistent font size */
+}
