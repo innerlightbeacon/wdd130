@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .herodiv {
+    /* Adding position relative to ensure .stats box is positioned relative to this container */
+    position: relative;
+    width: 50%;
+  }
+  
+  .herodiv img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .stats {
+    position: absolute;
+    bottom: 25px; /* 25px from the bottom */
+    left: 15px;  /* 15px from the left */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
