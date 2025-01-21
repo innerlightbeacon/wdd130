@@ -31,7 +31,7 @@ h1 {
     color: var(--primary-color);
     font-size: var(--font-size-large); /* Added consistent font size */
 }
-
+main { max-width: 840px;}
 /* More specific image styling for main content */
 main img {
     width: 150px;
