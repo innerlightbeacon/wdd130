@@ -1,44 +1,48 @@
 /* Color Palette */
 :root {
-    --primary-color: #1a3d5d;
-    --secondary-color: #d3bcc0;
-    --accent1-color: #69306d;
-    --accent2-color: #a5668b;
-}
-
-/* Apply fonts */
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--primary-color);
-}
-
-h1, h2 {
-    font-family: 'Roboto Slab', serif;
-    color: var(--accent1-color);
-}
-
-/* Header Styling */
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 3em;
-    font-weight: bold;
+    --primary-color: #ff5733;  /* Example Hex Code for Primary Color */
+    --secondary-color: #33c3ff;  /* Example Hex Code for Secondary Color */
+    --accent1-color: #f0e68c;  /* Example Hex Code for Accent Color 1 */
+    --accent2-color: #98fb98;  /* Example Hex Code for Accent Color 2 */
 }
 
 /* General Styling */
 body {
-    background-color: var(--secondary-color);
-}
-
-h2 {
-    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;  /* Text Font */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-p {
-    font-size: 1.2em;
-    margin: 20px;
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;  /* Heading Font */
+}
+
+header {
+    background-color: var(--accent2-color);
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    padding: 50px;
+}
+
+button {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
 }

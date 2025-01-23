@@ -3,20 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sparklyn Thrills - Whitewater Adventures</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Sparklyn Thrills - Whitewater Rafting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* Color Palette */
+        :root {
+            --primary-color: #ff5733;  /* Example Hex Code for Primary Color */
+            --secondary-color: #33c3ff;  /* Example Hex Code for Secondary Color */
+            --accent1-color: #f0e68c;  /* Example Hex Code for Accent Color 1 */
+            --accent2-color: #98fb98;  /* Example Hex Code for Accent Color 2 */
+        }
+
+        /* General Styling */
+        body {
+            font-family: 'Open Sans', sans-serif;  /* Text Font */
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;  /* Heading Font */
+        }
+
+        header {
+            background-color: var(--accent2-color);
+            padding: 20px 0;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        main {
+            padding: 50px;
+        }
+
+        button {
+            background-color: var(--accent1-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+    </style>
 </head>
 <body>
-    <!-- Header with company name -->
     <header>
-        <img src="path/to/logo.png" alt="Sparklyn Thrills Logo" class="logo">
-        <h1>Sparklyn Thrills</h1> <!-- Company name in header -->
+        <img src="images/logo.png" alt="Sparklyn Thrills Logo" class="logo">
     </header>
 
     <main>
-        <h2>Welcome to the Ultimate Whitewater Adventure!</h2>
-        <p>Experience the thrill of whitewater rafting with us. Book your adventure now!</p>
+        <h1>Welcome to Sparklyn Thrills</h1>
+        <h2>Your Ultimate Whitewater Rafting Adventure</h2>
+        <p>Experience the thrill of the rapids and the beauty of nature with our guided rafting tours.</p>
+        <button>Book Your Adventure Now</button>
     </main>
+
 </body>
 </html>
