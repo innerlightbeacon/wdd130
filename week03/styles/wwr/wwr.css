@@ -1,0 +1,44 @@
+/* Color Palette */
+:root {
+    --primary-color: #1a3d5d;
+    --secondary-color: #d3bcc0;
+    --accent1-color: #69306d;
+    --accent2-color: #a5668b;
+}
+
+/* Apply fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--primary-color);
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+    color: var(--accent1-color);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* General Styling */
+body {
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px;
+}
