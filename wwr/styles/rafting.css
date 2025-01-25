@@ -53,7 +53,7 @@
     background-image: url('images/hero-image.jpg'); /* Set background image */
     background-size: cover; /* Ensure image covers the entire hero section */
     background-position: center; /* Center the image */
-    height: 500px; /* Set a fixed height for the hero section */
+    height: 400px; /* Fixed height for the hero section */
     color: #fff;
     padding: 20px;
     margin-top: 60px; /* Add margin to avoid overlap with navigation */
@@ -86,8 +86,9 @@
   
   /* Adventure Section (Image Series) */
   .adventure {
-    padding: 20px;
-    margin-top: 20px; /* Add space between hero and image series */
+    padding: 40px 20px;  /* Added extra padding to create more space between hero image and image series */
+    margin-top: 50px; /* Added margin to ensure there's a gap between hero image and this section */
+    clear: both; /* Clear any floats in previous elements */
   }
   
   .imgseries {
@@ -95,7 +96,6 @@
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap; /* Ensure images wrap if the screen is small */
-    margin-top: 50px; /* Add space between hero and image series */
   }
   
   .imgseries img {
