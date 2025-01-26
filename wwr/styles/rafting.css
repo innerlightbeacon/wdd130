@@ -1,158 +1,140 @@
 /* Root Variables for Color Scheme */
 :root {
-    --primary-color: #ff5733;  /* Primary color */
-    --secondary-color: #33c3ff;  /* Secondary color */
-    --accent1-color: #f0e68c;  /* Accent color 1 */
-    --accent2-color: #98fb98;  /* Accent color 2 */
-  }
-  
-  /* General Styles */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff; /* Light blue for a fresh rafting vibe */
-    color: #333;
-  }
-  
-  /* Header Styles */
-  header {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--primary-color); /* Primary color */
-    color: #fff;
-    position: relative; /* Ensure header stays above the hero section */
-    z-index: 10; /* Keep header on top of the hero section */
-  }
-  
-  header .logo {
-    width: 200px; /* Adjust size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px;
-  }
-  
-  header nav {
-    margin-top: 10px;
-  }
-  
-  header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-  }
-  
-  header nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Hero Section */
-  .hero {
-    position: relative; /* Set to relative to contain absolutely positioned child elements */
-    background-image: url('images/hero-image.jpg'); /* Set background image */
-    background-size: cover; /* Ensure image covers the entire hero section */
-    background-position: center; /* Center the image */
-    height: 400px; /* Fixed height for the hero section */
-    color: #fff;
-    padding: 20px;
-    margin-top: 60px; /* Add margin to avoid overlap with navigation */
-  }
-  
-  .hero h1 {
-    position: absolute; /* Absolute positioning on top of the image */
-    top: 50%; /* Vertically center it */
-    left: 50%; /* Horizontally center it */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for text visibility */
-    margin: 0;
-  }
-  
-  .hero p {
-    position: absolute; /* Position paragraph over the hero image */
-    top: 60%; /* Place it slightly below the heading */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.25rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for text visibility */
-  }
-  
-  /* Main Content Styles */
-  main {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Adventure Section (Image Series) */
-  .adventure {
-    padding: 40px 20px;  /* Added extra padding to create more space between hero image and image series */
-    margin-top: 50px; /* Added margin to ensure there's a gap between hero image and this section */
-    clear: both; /* Clear any floats in previous elements */
-  }
-  
-  .imgseries {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; /* Ensure images wrap if the screen is small */
-  }
-  
-  .imgseries img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-  
-  /* Article Section */
-  article {
-    margin: 20px;
-  }
-  
-  .article-image {
-    float: right;
-    margin-left: 20px;
-    width: 50%;
-  }
-  
-  article p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-  }
-  
-  /* Footer Section */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--secondary-color); /* Secondary color */
-    color: #fff;
-  }
-  
-  footer p {
-    margin: 10px 0;
-  }
-  
-  footer .social-media {
-    margin: 10px 0;
-  }
-  
-  footer .social-media a {
-    margin: 0 10px;
-  }
-  
-  footer .social-media img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-  }
-  
-  footer .social-media a:hover img {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-  }
-  
-  /* Remove underline from social media image links */
-  footer .social-media a img {
-    text-decoration: none; /* Remove underline */
-  }
-  
+  --primary-color: #ff5733;  /* Primary color */
+  --secondary-color: #33c3ff;  /* Secondary color */
+  --accent1-color: #f0e68c;  /* Accent color 1 */
+  --accent2-color: #98fb98;  /* Accent color 2 */
+}
+
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light blue for a fresh rafting vibe */
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary-color); /* Primary color */
+  color: #fff;
+  position: relative; /* Ensure header stays above the hero section */
+  z-index: 10; /* Keep header on top of the hero section */
+}
+
+header .logo {
+  width: 200px; /* Adjust size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Set to relative to contain absolutely positioned child elements */
+  background-image: url('images/hero-image.jpg'); /* Set background image */
+  background-size: cover; /* Ensure image covers the entire hero section */
+  background-position: center; /* Center the image */
+  height: 400px; /* Fixed height for the hero section */
+  color: #fff;
+  padding: 20px;
+  margin-top: 60px; /* Add margin to avoid overlap with navigation */
+}
+
+.hero h1 {
+  position: absolute; /* Absolute positioning on top of the image */
+  top: 50%; /* Vertically center it */
+  left: 50%; /* Horizontally center it */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for text visibility */
+  margin: 0;
+}
+
+.hero p {
+  position: absolute; /* Position paragraph over the hero image */
+  top: 60%; /* Place it slightly below the heading */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for text visibility */
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Adventure Section (Image Series) */
+.adventure {
+  padding: 40px 20px;  /* Added extra padding to create more space between hero image and image series */
+  margin-top: 50px; /* Added margin to ensure there's a gap between hero image and this section */
+  clear: both; /* Clear any floats in previous elements */
+}
+
+.imgseries {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Ensure images wrap if the screen is small */
+}
+
+.imgseries img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--secondary-color); /* Secondary color */
+  color: #fff;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .social-media {
+  margin: 10px 0;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+footer .social-media img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-media a:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Remove underline from social media image links */
+footer .social-media a img {
+  text-decoration: none; /* Remove underline */
+}
