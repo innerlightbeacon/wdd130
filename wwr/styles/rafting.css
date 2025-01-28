@@ -1,3 +1,17 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 /* Header Styles */
 header {
   background-color: #1a73e8; /* Blue background */
@@ -7,7 +21,7 @@ header {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Aligns logo and navigation */
   align-items: center;
 }
 
@@ -19,7 +33,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Add spacing between navigation links */
+  gap: 20px; /* Adds spacing between navigation links */
   margin: 0;
   padding: 0;
 }
@@ -34,7 +48,7 @@ nav ul li a.active {
   text-decoration: underline; /* Highlight active page */
 }
 
-/* General Styles for Hero and Sections */
+/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
@@ -63,11 +77,11 @@ nav ul li a.active {
   font-size: 1.5rem;
 }
 
-/* About Us Section */
+/* About Section */
 .about-us {
   padding: 20px;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .about-us h2 {
@@ -77,13 +91,14 @@ nav ul li a.active {
 
 .about-us p {
   font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /* History Section */
 .history {
   padding: 20px;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #e9ecef;
+  text-align: center;
 }
 
 .history h2 {
@@ -93,20 +108,21 @@ nav ul li a.active {
 
 .history p {
   font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .history-image {
   width: 100%;
-  max-width: 600px;
-  margin-top: 20px;
   height: auto;
+  border-radius: 10px;
 }
 
-/* Our Mission Section */
+/* Mission Section */
 .mission {
   padding: 20px;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .mission h2 {
@@ -116,100 +132,116 @@ nav ul li a.active {
 
 .mission p {
   font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /* Adventure Section */
 .adventure {
   padding: 20px;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #e9ecef;
+  text-align: center;
 }
 
 .adventure h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .img-series {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
+  margin-top: 20px;
+}
+
+.img-series figure {
+  text-align: center;
 }
 
 .img-series img {
   width: 100%;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.img-series img:hover {
+  transform: scale(1.05);
+}
+
+.img-series figcaption {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #555;
 }
 
 /* Testimonials Section */
 .testimonials {
   padding: 20px;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .testimonials blockquote {
   font-size: 1.2rem;
-  margin: 20px 0;
+  line-height: 1.6;
+  margin: 0;
   padding: 10px;
-  background-color: #eee;
+  background-color: #f9f9f9;
   border-left: 5px solid #1a73e8;
 }
 
-.testimonials blockquote footer {
-  font-size: 1rem;
-  text-align: right;
+.testimonials footer {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-/* Footer Section Styling */
+/* Footer Section */
 footer {
-  background-color: #1a73e8; /* Blue background */
+  background-color: #1a73e8;
   color: white;
-  padding: 20px 40px; /* Add padding */
+  padding: 10px 20px;
 }
 
 .footer-container {
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space out elements */
-  align-items: center; /* Align items vertically */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-}
-
-footer p {
-  font-size: 1rem; /* Adjust font size */
-  margin: 0; /* Remove margin around the paragraph */
-  flex-grow: 1; /* Allow paragraph to take up remaining space */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-media {
-  display: flex; /* Use Flexbox to arrange social icons horizontally */
-  justify-content: flex-end; /* Align the icons to the right */
-  gap: 15px; /* Space out the icons */
+  display: flex;
+  gap: 10px;
+}
+
+.social-media a {
+  margin: 0;
 }
 
 .social-icon {
-  width: 30px; /* Set width for social icons */
-  height: auto; /* Maintain aspect ratio */
+  width: 30px;
+  height: auto;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+  }
+
+  .img-series {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
   .footer-container {
-      flex-direction: column; /* Stack the items vertically on small screens */
-      align-items: flex-start; /* Align items to the start on smaller screens */
-      text-align: left; /* Align text to the left */
-  }
-
-  .social-media {
-      margin-top: 10px; /* Add margin to the top of the social media links */
-      justify-content: flex-start; /* Align the social icons to the left */
-  }
-
-  .social-icon {
-      width: 25px; /* Adjust icon size for smaller screens */
+      flex-direction: column;
+      align-items: flex-start;
   }
 }
