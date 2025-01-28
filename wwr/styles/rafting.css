@@ -1,140 +1,215 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f4f4f4;
+/* Header Styles */
+header {
+  background-color: #1a73e8; /* Blue background */
+  padding: 10px 20px;
+  color: white;
 }
 
-a {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px; /* Resize the logo */
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Add spacing between navigation links */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  text-decoration: underline; /* Highlight active page */
+}
+
+/* General Styles for Hero and Sections */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 20px;
+  background-color: #f5f5f5;
   color: #333;
 }
 
-nav a {
-  padding: 10px;
-  margin: 0 15px;
-  display: inline-block;
-  color: white; /* Ensure the text is white on dark background */
-}
-
-/* Header */
-header {
-  background-color: #003366; /* Dark blue for header */
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-header .logo {
-  max-width: 150px;
+.about-us h2 {
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
-nav a:hover {
-  color: #ffcc00; /* Gold color for hover effect */
-}
-
-/* Hero Section */
-.hero {
-  background-color: #0077b6; /* Blue for hero section */
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-/* Article Section */
-article {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-article .article-image {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+.about-us p {
+  font-size: 1.2rem;
 }
 
 /* History Section */
 .history {
-  background-color: #e6f7ff; /* Light blue for history section */
-  padding: 40px 20px;
-  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
 }
 
 .history h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.history p {
+  font-size: 1.2rem;
+}
+
+.history-image {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  height: auto;
+}
+
+/* Our Mission Section */
+.mission {
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.mission p {
+  font-size: 1.2rem;
 }
 
 /* Adventure Section */
 .adventure {
-  padding: 40px 20px;
-  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
 }
 
 .adventure h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-.imgseries {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+.img-series {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
 }
 
-.imgseries img {
-  max-width: 100%;
-  height: auto;
+.img-series img {
+  width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-.imgseries img:hover {
-  transform: scale(1.05);
+/* Testimonials Section */
+.testimonials {
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-/* Footer Section */
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.testimonials blockquote {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #eee;
+  border-left: 5px solid #1a73e8;
+}
+
+.testimonials blockquote footer {
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* Footer Section Styling */
 footer {
-  background-color: #003366; /* Dark blue for footer */
+  background-color: #1a73e8; /* Blue background */
   color: white;
-  padding: 30px 20px;
-  text-align: center;
+  padding: 20px 40px; /* Add padding */
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space out elements */
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+footer p {
+  font-size: 1rem; /* Adjust font size */
+  margin: 0; /* Remove margin around the paragraph */
+  flex-grow: 1; /* Allow paragraph to take up remaining space */
 }
 
 .social-media {
-  margin-top: 20px;
+  display: flex; /* Use Flexbox to arrange social icons horizontally */
+  justify-content: flex-end; /* Align the icons to the right */
+  gap: 15px; /* Space out the icons */
 }
 
-.social-media a {
-  margin: 0 15px;
+.social-icon {
+  width: 30px; /* Set width for social icons */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.social-media img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack the items vertically on small screens */
+      align-items: flex-start; /* Align items to the start on smaller screens */
+      text-align: left; /* Align text to the left */
+  }
 
-.social-media img:hover {
-  transform: scale(1.2);
+  .social-media {
+      margin-top: 10px; /* Add margin to the top of the social media links */
+      justify-content: flex-start; /* Align the social icons to the left */
+  }
+
+  .social-icon {
+      width: 25px; /* Adjust icon size for smaller screens */
+  }
 }

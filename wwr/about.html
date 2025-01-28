@@ -4,60 +4,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>About Us - Whitewater Rafting</title>
+    <style>
+        /* Header Styles */
+        header {
+            background-color: #1a73e8; /* Blue background */
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 150px; /* Resize the logo */
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px; /* Add spacing between navigation links */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline; /* Highlight active page */
+        }
+
+        /* General Styles for Hero and Sections */
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-overlay h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero-overlay p {
+            font-size: 1.5rem;
+        }
+
+        .img-series {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .img-series img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Footer Section Styling */
+        footer {
+            background-color: #1a73e8; /* Blue background */
+            color: white;
+            padding: 20px 40px; /* Add padding */
+        }
+
+        .footer-container {
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between; /* Space out elements */
+            align-items: center; /* Align items vertically */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+
+        footer p {
+            font-size: 1rem; /* Adjust font size */
+            margin: 0; /* Remove margin around the paragraph */
+            flex-grow: 1; /* Allow paragraph to take up remaining space */
+        }
+
+        .social-media {
+            display: flex; /* Use Flexbox to arrange social icons horizontally */
+            justify-content: flex-end; /* Align the icons to the right */
+            gap: 15px; /* Space out the icons */
+        }
+
+        .social-icon {
+            width: 30px; /* Set width for social icons */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column; /* Stack the items vertically on small screens */
+                align-items: flex-start; /* Align items to the start on smaller screens */
+                text-align: left; /* Align text to the left */
+            }
+
+            .social-media {
+                margin-top: 10px; /* Add margin to the top of the social media links */
+                justify-content: flex-start; /* Align the social icons to the left */
+            }
+
+            .social-icon {
+                width: 25px; /* Adjust icon size for smaller screens */
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <img src="images/z-wwr-blue.png" alt="Whitewater Rafting Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-container">
+            <img src="images/z-wwr-blue.png" alt="Whitewater Rafting Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <div class="hero">
         <img src="images/hero.png" alt="Rafting Adventure" class="hero-image">
         <div class="hero-overlay">
-            <h1>Whitewater Rafting</h1>
-            <p>Your adventure starts here.</p>
+            <h1>Welcome to Whitewater Rafting</h1>
+            <p>Your adventure starts here. Discover thrills, excitement, and the beauty of nature with us!</p>
         </div>
     </div>
 
-    <!-- Article Section -->
-    <article>
-        <img src="images/happy-client.png" alt="A happy client enjoying a rafting adventure" class="article-image">
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>About Us</h2>
         <p>
-            At Whitewater Rafting, our mission is to provide unforgettable whitewater rafting experiences. Whether you’re
-            seeking adventure, excitement, or a connection with nature, we are here to make your journey remarkable.
+            At Whitewater Rafting, we strive to create life-changing adventures on the water. With years of experience
+            and a dedicated team of experts, we ensure every trip is safe, exhilarating, and unforgettable.
         </p>
-    </article>
+    </section>
 
     <!-- History Section -->
     <section class="history">
         <h2>Our History</h2>
         <p>
-            Whitewater Rafting began as a small family-owned rafting company, committed to bringing the thrill of the
-            rapids to adventurers of all ages. Over the years, we have grown into a well-loved destination for rafting
-            enthusiasts, blending safety, fun, and adventure into every ride.
+            Established as a family-owned business, Whitewater Rafting started with a passion for sharing the excitement
+            of the rapids. Today, we have become a trusted name in the rafting world, known for our commitment to safety
+            and thrilling experiences.
+        </p>
+        <img src="images/history.png" alt="Our History" class="history-image">
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is simple: to provide extraordinary experiences that connect people to nature, foster
+            adventure, and create memories that last a lifetime. Whether you are a seasoned rafter or a first-timer,
+            we have something for everyone.
         </p>
     </section>
 
     <!-- Adventure Section -->
     <section class="adventure">
         <h2>Adventure Awaits You!</h2>
-        <div class="imgseries">
-            <img src="images/image1.png" alt="Whitewater rafting image 1">
-            <img src="images/image2.png" alt="Whitewater rafting image 2">
-            <img src="images/image3.png" alt="Whitewater rafting image 3">
-            <img src="images/image4.png" alt="Whitewater rafting image 4">
-            <img src="images/image5.png" alt="Whitewater rafting image 5">
+        <div class="img-series">
+            <figure>
+                <img src="images/image1.png" alt="Los Dientes del Diablo">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/image2.png" alt="Big Mallard">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/image3.png" alt="Half Day Adventure">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/image4.png" alt="Class V Rapids">
+                <figcaption>Class V Rapids</figcaption>
+            </figure>
+            <figure>
+                <img src="images/image5.png" alt="The Wild Rapids">
+                <figcaption>The Wild Rapids</figcaption>
+            </figure>
         </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"Whitewater Rafting provided the most exciting experience of my life! The guides were professional, and
+                the adventure was unforgettable!"</p>
+            <footer>- A Happy Adventurer</footer>
+        </blockquote>
     </section>
 
     <!-- Footer Section -->
