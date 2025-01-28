@@ -4,59 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting</title>
+    <title>About Us - Whitewater Rafting</title>
+    <meta name="author" content="Jackson Osei Kumi">
+
+    <!-- Google Fonts Preconnect Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <!-- Google Fonts Link for the font you want to use -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <img src="images/z-wwr-blue.png" alt="Whitewater Rafting Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-container">
+            <img src="images/z-wwr-blue.png" alt="Whitewater Rafting Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Section -->
+    <!-- Main Content Section -->
     <main>
         <!-- Hero Section -->
         <div class="hero">
-            <h1>Whitewater Rafting</h1>
-            <p>Your adventure starts here.</p>
+            <img src="images/hero.png" alt="Rafting Adventure" class="hero-image">
+            <div class="hero-overlay">
+                <h1>Welcome to Whitewater Rafting</h1>
+                <p>Your adventure starts here. Discover thrills, excitement, and the beauty of nature with us!</p>
+            </div>
         </div>
 
-        <!-- Article Section -->
-        <article>
-            <img src="images/happy-client.png" alt="A happy client enjoying a rafting adventure" class="article-image">
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h2>About Us</h2>
             <p>
-                At Whitewater Rafting, our mission is to provide unforgettable whitewater rafting experiences. Whether you’re
-                seeking adventure, excitement, or a connection with nature, we are here to make your journey remarkable.
+                At Whitewater Rafting, we strive to create life-changing adventures on the water. With years of experience
+                and a dedicated team of experts, we ensure every trip is safe, exhilarating, and unforgettable.
             </p>
-        </article>
+        </section>
 
         <!-- History Section -->
         <section class="history">
             <h2>Our History</h2>
             <p>
-                Whitewater Rafting began as a small family-owned rafting company, committed to bringing the thrill of the
-                rapids to adventurers of all ages. Over the years, we have grown into a well-loved destination for rafting
-                enthusiasts, blending safety, fun, and adventure into every ride.
+                Established as a family-owned business, Whitewater Rafting started with a passion for sharing the excitement
+                of the rapids. Today, we have become a trusted name in the rafting world, known for our commitment to safety
+                and thrilling experiences.
+            </p>
+            <img src="images/history.png" alt="Our History" class="history-image">
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is simple: to provide extraordinary experiences that connect people to nature, foster
+                adventure, and create memories that last a lifetime. Whether you are a seasoned rafter or a first-timer,
+                we have something for everyone.
             </p>
         </section>
 
         <!-- Adventure Section -->
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
-            <div class="imgseries">
-                <img src="images/image1.png" alt="Whitewater rafting image 1">
-                <img src="images/image2.png" alt="Whitewater rafting image 2">
-                <img src="images/image3.png" alt="Whitewater rafting image 3">
-                <img src="images/image4.png" alt="Whitewater rafting image 4">
-                <img src="images/image5.png" alt="Whitewater rafting image 5">
+            <div class="img-series">
+                <figure>
+                    <img src="images/image1.png" alt="Whitewater rafting image 1">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image2.png" alt="Whitewater rafting image 2">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image3.png" alt="Whitewater rafting image 3">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image4.png" alt="Whitewater rafting image 4">
+                    <figcaption>Big Rapids</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image5.png" alt="Whitewater rafting image 5">
+                    <figcaption>Wild River</figcaption>
+                </figure>
             </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <blockquote>
+                <p>"Whitewater Rafting provided the most exciting experience of my life! The guides were professional, and
+                    the adventure was unforgettable!"</p>
+                <footer>- A Happy Adventurer</footer>
+            </blockquote>
         </section>
     </main>
 
