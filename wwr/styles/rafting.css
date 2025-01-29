@@ -1,73 +1,88 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+h1, h2, h3 {
+  margin: 0;
+  padding: 10px 0;
 }
 
-/* Header Section - Grid Layout for Header */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+/* Header Styles (CSS Grid) */
 header {
-  background-color: #004b87;
-  padding: 1rem 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
 .header-container {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 3fr;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .logo {
-  width: 150px;
+  max-height: 50px;
 }
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
-  list-style: none;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-  margin-left: 2rem;
+  margin: 0;
 }
 
 nav ul li a {
   color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  text-transform: uppercase;
+  padding: 10px 20px;
+  display: block;
 }
 
-nav ul li a.active {
-  color: #ffcc00;
+nav ul li a:hover, nav ul li a.active {
+  background-color: #007BFF;
+  border-radius: 4px;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
+/* Hero Section Styles */
 .hero {
   position: relative;
-  overflow: hidden;
-  margin-bottom: 2rem;
+  height: 400px;
 }
 
 .hero-image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -76,146 +91,133 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
-.hero-overlay h1 {
+.hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
-.hero-overlay p {
-  font-size: 1.25rem;
+.hero p {
+  font-size: 1.2rem;
 }
 
-/* About Us Section */
+/* About Us Section Styles */
 .about-us {
   text-align: center;
-  margin: 3rem 1rem;
+  padding: 40px;
 }
 
 .about-us h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.about-us p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-/* History Section */
+/* History Section Styles */
 .history {
+  padding: 40px;
   text-align: center;
-  margin: 3rem 1rem;
 }
 
 .history h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.history p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
+.history img {
+  width: 60%;
+  margin-top: 20px;
+  border-radius: 8px;
 }
 
-.history-image {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin-top: 2rem;
-}
-
-/* Mission Section */
+/* Mission Section Styles */
 .mission {
+  padding: 40px;
+  background-color: #f4f4f4;
   text-align: center;
-  margin: 3rem 1rem;
 }
 
 .mission h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.mission p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-/* Adventure Section */
+/* Adventure Section Styles (Figures and Captions) */
 .adventure {
+  padding: 40px;
+  background-color: #eaeaea;
   text-align: center;
-  margin: 3rem 1rem;
 }
 
 .adventure h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .img-series {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  gap: 20px;
   justify-items: center;
 }
 
 figure {
-  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 figcaption {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-/* Testimonials Section */
+/* Testimonials Section Styles */
 .testimonials {
-  background-color: #004b87;
-  color: #fff;
+  padding: 40px;
   text-align: center;
-  padding: 2rem 1rem;
-  margin: 3rem 0;
+  background-color: #fff;
 }
 
 .testimonials blockquote {
-  font-size: 1.2rem;
   font-style: italic;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .testimonials footer {
-  font-size: 1rem;
-  margin-top: 1rem;
+  font-weight: bold;
 }
 
-/* Footer Section */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem;
+/* Footer Styles */
+footer .social-media a {
+  margin: 0 10px;
 }
 
-footer .social-media {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-footer .social-icon {
+.social-icon {
   width: 30px;
   height: 30px;
-  margin-left: 1rem;
 }
 
-footer .social-icon:hover {
-  opacity: 0.7;
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .header-container {
+      grid-template-columns: 1fr;
+  }
+
+  .img-series {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
 }
