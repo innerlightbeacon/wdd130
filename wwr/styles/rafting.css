@@ -1,89 +1,61 @@
-/* General Styles */
+/* General Body Styling */
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
-h1, h2, h3 {
-  margin: 0;
+/* Header Section */
+.header-nav {
+  background-color: #003366; /* Adjust header background color */
+  color: white;
   padding: 10px 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer .social-media a {
-  margin: 0 10px;
-}
-
-/* Header Styles (CSS Grid) */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-}
-
 .header-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .logo {
-  max-height: 50px;
+  height: 50px;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
   list-style-type: none;
   padding: 0;
+  display: flex;
   margin: 0;
 }
 
-nav ul li {
-  margin: 0;
+nav li {
+  margin-right: 20px;
 }
 
-nav ul li a {
-  color: #fff;
-  padding: 10px 20px;
-  display: block;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-nav ul li a:hover, nav ul li a.active {
-  background-color: #007BFF;
-  border-radius: 4px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
   position: relative;
-  height: 400px;
+  overflow: hidden;
 }
 
 .hero-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 .hero-overlay {
@@ -91,22 +63,26 @@ nav ul li a:hover, nav ul li a.active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
-.hero h1 {
+.hero-overlay h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.hero p {
+.hero-overlay p {
   font-size: 1.2rem;
 }
 
-/* About Us Section Styles */
+/* About Us Section */
 .about-us {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
+  background-color: #ffffff;
 }
 
 .about-us h2 {
@@ -114,10 +90,17 @@ nav ul li a:hover, nav ul li a.active {
   margin-bottom: 20px;
 }
 
-/* History Section Styles */
+.about-us p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* History Section */
 .history {
-  padding: 40px;
   text-align: center;
+  padding: 40px 20px;
+  background-color: #e2f0f4;
 }
 
 .history h2 {
@@ -125,17 +108,23 @@ nav ul li a:hover, nav ul li a.active {
   margin-bottom: 20px;
 }
 
-.history img {
-  width: 60%;
-  margin-top: 20px;
-  border-radius: 8px;
+.history p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Mission Section Styles */
+.history-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Mission Section */
 .mission {
-  padding: 40px;
-  background-color: #f4f4f4;
   text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
 }
 
 .mission h2 {
@@ -143,11 +132,17 @@ nav ul li a:hover, nav ul li a.active {
   margin-bottom: 20px;
 }
 
-/* Adventure Section Styles (Figures and Captions) */
+.mission p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Adventure Section */
 .adventure {
-  padding: 40px;
-  background-color: #eaeaea;
   text-align: center;
+  padding: 40px 20px;
+  background-color: #e2f0f4;
 }
 
 .adventure h2 {
@@ -156,68 +151,98 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .img-series {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-figure {
-  margin: 0;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-figcaption {
+.img-series figure {
+  margin: 10px;
   text-align: center;
+}
+
+.img-series img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.img-series figcaption {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+blockquote footer {
   margin-top: 10px;
   font-weight: bold;
 }
 
-/* Testimonials Section Styles */
-.testimonials {
-  padding: 40px;
+/* Footer Section */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  background-color: #fff;
 }
 
-.testimonials blockquote {
-  font-style: italic;
-  font-size: 1.2rem;
-  margin: 0;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.testimonials footer {
-  font-weight: bold;
-}
-
-/* Footer Styles */
-footer .social-media a {
-  margin: 0 10px;
+.social-media {
+  margin-top: 20px;
 }
 
 .social-icon {
   width: 30px;
-  height: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s;
 }
 
-/* Media Query for Responsiveness */
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .header-container {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin-bottom: 10px;
   }
 
   .img-series {
-      grid-template-columns: 1fr 1fr;
-  }
-
-  .hero h1 {
-      font-size: 2rem;
-  }
-
-  .hero p {
-      font-size: 1rem;
+      flex-direction: column;
   }
 }
