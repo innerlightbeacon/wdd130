@@ -1,14 +1,16 @@
-/* Global Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
+/* General Styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2 {
-  font-weight: 600;
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
+  padding-bottom: 50px;
 }
 
 a {
@@ -18,224 +20,224 @@ a {
 
 ul {
   list-style: none;
-  padding: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+h1, h2, h3 {
+  color: #333;
 }
 
-/* Header Styles */
 header {
-  background-color: #fff;
+  background-color: #004d99;
+  color: white;
   padding: 20px 0;
 }
 
 .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 
-.header-container .logo {
-  height: 50px;
+.logo {
+  max-width: 150px;
 }
 
 nav ul {
   display: flex;
+  gap: 20px;
 }
 
 nav ul li {
-  margin-right: 20px;
+  display: inline-block;
 }
 
 nav ul li a {
-  font-size: 1.1rem;
-  color: #333;
-  transition: color 0.3s ease;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #007bff; /* Hover color */
+  color: #f1c40f;
 }
 
-/* Hero Section Styles */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
-  text-align: center;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
 
 .hero-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-overlay h1 {
-  font-size: 3rem;
+  font-size: 36px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .hero-overlay p {
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
-/* About Us Section Styles */
+/* About Us Section */
 .about-us {
+  background-color: #ffffff;
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  margin-bottom: 20px;
 }
 
 .about-us h2 {
-  font-size: 2rem;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
-.about-us p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-/* History Section Styles */
+/* History Section */
 .history {
+  background-color: #e9f1f7;
   padding: 40px 20px;
-  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .history h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.history p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .history-image {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-/* Mission Section Styles */
+/* Mission Section */
 .mission {
+  background-color: #ffffff;
   padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-
-.mission h2 {
-  font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.mission p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.mission h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-/* Adventure Section Styles */
+/* Adventure Section */
 .adventure {
+  background-color: #f1f1f1;
   padding: 40px 20px;
-  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .adventure h2 {
-  font-size: 2rem;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .img-series {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .img-series figure {
+  flex: 1 1 200px;
   text-align: center;
 }
 
-.img-series figcaption {
-  font-size: 1rem;
-  margin-top: 10px;
-  color: #333;
+.img-series img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  /* Hero Section */
-  .hero-overlay h1 {
-      font-size: 2rem;
-  }
-
-  /* Header Styles */
-  .header-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  nav ul {
-      flex-direction: column;
-      margin-top: 10px;
-  }
-
-  nav ul li {
-      margin-bottom: 10px;
-  }
-
-  /* Adventure Section */
-  .img-series {
-      grid-template-columns: 1fr 1fr;
-  }
+.img-series img:hover {
+  transform: scale(1.05);
 }
 
-/* Testimonials Section Styles */
+/* Testimonials Section */
 .testimonials {
+  background-color: #e9f1f7;
   padding: 40px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
 }
 
-.testimonials blockquote {
-  font-size: 1.2rem;
-  font-style: italic;
+.testimonials h2 {
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
-.testimonials footer {
-  font-size: 1rem;
-  color: #555;
+blockquote {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Styles */
+blockquote footer {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Footer Section */
 footer {
-  background-color: #333;
+  background-color: #004d99;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .social-media {
   margin-top: 10px;
 }
 
-.social-media a {
-  margin: 0 10px;
-}
-
 .social-icon {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
 }
 
 .social-icon:hover {
