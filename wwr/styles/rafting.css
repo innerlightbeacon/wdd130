@@ -243,3 +243,140 @@ footer {
 .social-icon:hover {
   transform: scale(1.1);
 }
+/* Base Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #0066cc;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Employee Profiles */
+.employee-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.employee-profile {
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+}
+
+.employee-profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.employee-profile h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+form input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form button {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #004b99;
+}
+
+form .newsletter {
+  display: flex;
+  align-items: center;
+}
+
+form .newsletter input {
+  margin-right: 10px;
+}
+
+/* Footer Link to Wireframe */
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Whitewater Rafting for inquiries, reservations, or suggestions. Meet our friendly team and leave us a message.">
+  <title>Contact Us - Whitewater Rafting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <section id="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="profile">
+        <img src="images/employee1.png" alt="Profile picture of Florence Ofosu">
+        <p>Florence Ofosu - Adventure Guide</p>
+      </div>
+      <div class="profile">
+        <img src="images/employee2.png" alt="Profile picture of Jane Smith">
+        <p>Jesse Jackson - Customer Support</p>
+      </div>
+      <div class="profile">
+        <img src="images/employee3.png" alt="Profile picture of Mark Johnson">
+        <p>Dr O Fosu - Safety Coordinator</p>
+      </div>
+    </section>
+
+    <section id="contact-form">
+      <h2>Leave Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <p>Purpose of the Message:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Whitewater Rafting. All rights reserved.</p>
+    <p><a href="wireframes/contact_us_wireframe.png">View Contact Us Wireframe</a></p>
+  </footer>
+</body>
+</html>
