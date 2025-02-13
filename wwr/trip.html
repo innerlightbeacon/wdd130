@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whitewater Rafting - Trips</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips - Whitewater Rafting</title>
+    <meta name="description" content="Explore the exciting trips and adventures offered by Whitewater Rafting. Choose from various packages suitable for beginners and seasoned adventurers.">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-  <header>
-    <div class="header-container">
-      <h1>Whitewater Rafting</h1>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="trips.html">Trips</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Header Section -->
+    <header class="header-nav">
+        <div class="header-container">
+            <img src="images/z-wwr-blue.png" alt="Whitewater Rafting Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html" class="active">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section class="adventure">
-      <h2>Our Trips</h2>
-      <p>Choose from a variety of exciting whitewater adventures. We have trips for all skill levels, from beginners to experienced rafters.</p>
-      <div class="img-series">
-        <figure>
-          <img src="trip1.jpg" alt="Trip 1">
-          <figcaption>Beginner Rapids</figcaption>
-        </figure>
-        <figure>
-          <img src="trip2.jpg" alt="Trip 2">
-          <figcaption>Intermediate Challenge</figcaption>
-        </figure>
-        <figure>
-          <img src="trip3.jpg" alt="Trip 3">
-          <figcaption>Advanced Adventure</figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
+    <!-- Main Content -->
+    <main>
+        <h1>Our Trips</h1>
+        
+        <!-- Trip Packages Section -->
+        <section id="trip-packages">
+            <h2>Adventure Packages</h2>
+            <div class="trip">
+                <img src="images/mountain.png" alt="Beginner River Adventure">
+                <h3>Beginner River Adventure</h3>
+                <p>Perfect for first-timers! Enjoy a gentle ride down the river with stunning views and small rapids.</p>
+            </div>
+            <div class="trip">
+                <img src="images/rapids.png" alt=" Rapids Challenge"> 
+                <h3>Intermediate Rapids Challenge</h3>
+                <p>A step up in excitement! Tackle Class III rapids and experience the thrill of adventure.</p>
+            </div>
+            <div class="trip">
+                <img src="images/river.png" alt=" Advanced Whitewater Expedition">
+                <h3>Advanced Whitewater Expedition</h3>
+                <p>For the pros! Conquer Class IV and V rapids on this heart-pounding journey.</p>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Whitewater Rafting. All rights reserved.</p>
-  </footer>
+        <!-- Booking Information Section -->
+        <section class="booking-info">
+            <h2>Book Your Adventure</h2>
+            <p>Ready to experience the thrill? Select your preferred trip and book your adventure today!</p>
+            <a href="contact.html" class="button">Contact Us to Book</a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Whitewater Rafting. All rights reserved. | Jackson Osei Kumi</p>
+            <p><a href="wireframes/trips_wireframe.png">View Trips Wireframe</a></p>
+            
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

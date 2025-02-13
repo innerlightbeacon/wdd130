@@ -1,69 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whitewater Rafting - Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Whitewater Rafting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/z-wwr-blue.png" alt="Whitewater Rafting Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Site Plan</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header Section -->
+    <header class="header-nav">
+        <div class="header-container">
+            <img src="images/z-wwr-blue.png" alt="Whitewater Rafting Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section class="hero">
-    <h1>Have an Adventure</h1>
-    <p>Make Memories with Whitewater Rafting</p>
-    <a href="#" class="btn">Book Now</a>
-  </section>
+    <!-- Hero Section with Full-Width Image and Heading -->
+    <section class="hero" style="position: relative;">
+        <img src="images/hero2.png" alt="Rafting Adventure" class="hero2" style="width: 100%; height: 400px; object-fit: cover;">
+        <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+            Discover Your Next Adventure
+        </h1>
+    </section>
 
-  <section class="grid">
-    <div class="grid-item">
-      <img src="images/river.png" alt="Rivers">
-      <h3>Rivers</h3>
-    </div>
-    <div class="grid-item">
-      <img src="images/camping.png" alt="Camping">
-      <h3>Camping</h3>
-    </div>
-    <div class="grid-item">
-      <img src="images/rapids.png" alt="Rapids">
-      <h3>Rapids</h3>
-    </div>
-  </section>
+    <!-- Newsletter Signup Form -->
+    <section class="newsletter">
+        <h2>Stay Connected</h2>
+        <p>Sign up for our newsletter and stay updated on the latest trips and adventures.</p>
+        <form action="#" method="post" class="newsletter-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
 
-  <section class="content">
-    <div class="content-image">
-      <img src="images/mountain.png" alt="Mountains">
-    </div>
-    <div class="content-text">
-      <h2>More Than Just The Thrill</h2>
-      <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks, it’s way more than just the rapids. It’s a great way to get away from it all and relax amongst the beauty of the great outdoors.</p>
-      <a href="#" class="btn">Join Us</a>
-    </div>
-  </section>
+    <!-- Call to Action -->
+    <section class="call-to-action">
+        <h2>Ready for an Unforgettable Experience?</h2>
+        <p>Join one of our thrilling whitewater rafting trips and create memories that will last a lifetime.</p>
+        <a href="trips.html" class="cta-button">Explore Our Trips</a>
+    </section>
 
-  <footer>
-    <p>Whitewater Rafting © 20XX - Jackson Osei Kumi</p>
-    <nav>
-      <a href="#">Site Plan</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-    <div class="social-media">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
-    </div>
-  </footer>
+    <!-- Grid Section with Purpose and Offerings -->
+    <section class="site-purpose">
+        <h2>Our Purpose and Offerings</h2>
+        <div class="grid-layout">
+            <div class="grid-item">
+                <img src="images/mountain.png" alt="Scenic Rafting Adventure">
+                <h3>Connecting with Nature</h3>
+                <p>We aim to provide a unique way to explore the beauty of rivers while enjoying the thrill of rafting.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/image5.png" alt="Group Adventure">
+                <h3>Adventure for Everyone</h3>
+                <p>From beginners to experienced rafters, we offer trips suited for all skill levels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Whitewater Rafting. All rights reserved. | Jackson Osei Kumi</p>
+            <p><a href="wireframes/home_wireframe.png">View Home Wireframe</a></p>
+            
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
